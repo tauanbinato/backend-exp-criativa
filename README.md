@@ -5,10 +5,10 @@
 
 ## 👨🏼‍💻 Equipe
 
-- [Tauan]
-- [Felipe]
-- [Henry]
-- [Armstrong]
+- [Tauan](https://github.com/tauanbinato)
+- [Felipe](https://github.com/felipeyamane)
+- [Henry](https://github.com/Hinkien)
+- [Armstrong](https://github.com/zArmsSlayer)
 
 ## 🚀 Tecnologias 
 
