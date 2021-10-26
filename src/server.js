@@ -12,6 +12,7 @@ app.use(express.json());
 app.use((req,res, next) => {
     //console.log('acessou mid');
     res.header("Access-Control-Allow-Origin", "localhost:8080","esuper.adazulpool.com");
+    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
     app.use(cors);
     next();
 });
