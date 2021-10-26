@@ -9,6 +9,11 @@ require('./database');
 const app = express();
 
 app.use(express.json());
+app.use((req,res, next) => {
+    //console.log('acessou mid');
+    res.header("Access-Control-Allow-Origin", "localhost:8080","esuper.adazulpool.com");
+    app.use(cors);
+    next();
+});
 app.use(routes);
-app.use(cors)
 app.listen(process.env.PORT || 3333);
