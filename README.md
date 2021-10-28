@@ -10,6 +10,7 @@
  🔹 [Henry Ullrich](https://github.com/Hinkien)
  🔹 [Armstrong Henrique](https://github.com/zArmsSlayer)
 
+
 ## 🚀 Tecnologias 
 
 - Node.js
