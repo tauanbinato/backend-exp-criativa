@@ -5,10 +5,11 @@
 
 ## 👨🏼‍💻 Equipe
 
-- [Tauan Binato](https://github.com/tauanbinato)
-- [Felipe Yamane](https://github.com/felipeyamane)
-- [Henry Ullrich](https://github.com/Hinkien)
-- [Armstrong Henrique](https://github.com/zArmsSlayer)
+ 🔹 [Tauan Binato](https://github.com/tauanbinato)
+ 🔹 [Felipe Yamane](https://github.com/felipeyamane)
+ 🔹 [Henry Ullrich](https://github.com/Hinkien)
+ 🔹 [Armstrong Henrique](https://github.com/zArmsSlayer)
+
 
 ## 🚀 Tecnologias 
 
