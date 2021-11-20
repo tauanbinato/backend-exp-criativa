@@ -1,6 +1,7 @@
 const express = require('express');
 
 const UserController = require('./controllers/UserController');
+const ProductController = require('./controllers/ProductController');
 const AddressController = require('./controllers/AddressController');
 const TechController = require('./controllers/TechController');
 const ReportController = require('./controllers/ReportController');
@@ -10,6 +11,9 @@ const routes = express.Router();
 routes.get('/', (req,res) => {
     res.send('hello world');
 })
+
+routes.post('/products', ProductController.store);
+routes.get('/products', ProductController.index);
 
 routes.get('/users', UserController.index);
 routes.post('/users', UserController.store);
