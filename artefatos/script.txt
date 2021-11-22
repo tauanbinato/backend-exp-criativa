@@ -1,0 +1,97 @@
+-- public.products definition
+
+-- Drop table
+
+-- DROP TABLE public.products;
+
+CREATE TABLE public.products (
+	id serial4 NOT NULL,
+	"name" varchar(255) NOT NULL,
+	price float8 NULL,
+	description varchar(2555) NOT NULL,
+	created_at timestamptz NOT NULL,
+	updated_at timestamptz NOT NULL,
+	CONSTRAINT products_pkey PRIMARY KEY (id)
+);
+
+
+
+
+-- public.addresses definition
+
+-- Drop table
+
+-- DROP TABLE public.addresses;
+
+CREATE TABLE public.addresses (
+	id serial4 NOT NULL,
+	user_id int4 NOT NULL,
+	zipcode varchar(255) NOT NULL,
+	street varchar(255) NOT NULL,
+	"number" int4 NOT NULL,
+	created_at timestamptz NOT NULL,
+	updated_at timestamptz NOT NULL,
+	CONSTRAINT addresses_pkey PRIMARY KEY (id)
+);
+
+
+-- public.addresses foreign keys
+
+ALTER TABLE public.addresses ADD CONSTRAINT addresses_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+
+-- public.product_types definition
+
+-- Drop table
+
+-- DROP TABLE public.product_types;
+
+CREATE TABLE public.product_types (
+	id serial4 NOT NULL,
+	product_id int4 NOT NULL,
+	"type" varchar(255) NOT NULL,
+	"size" varchar(255) NULL,
+	created_at timestamptz NOT NULL,
+	updated_at timestamptz NOT NULL,
+	CONSTRAINT product_types_pkey PRIMARY KEY (id)
+);
+
+
+-- public.product_types foreign keys
+
+ALTER TABLE public.product_types ADD CONSTRAINT product_types_product_id_fkey FOREIGN KEY (product_id) REFERENCES public.products(id) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+-- public.products definition
+
+-- Drop table
+
+-- DROP TABLE public.products;
+
+CREATE TABLE public.products (
+	id serial4 NOT NULL,
+	"name" varchar(255) NOT NULL,
+	price float8 NULL,
+	description varchar(2555) NOT NULL,
+	created_at timestamptz NOT NULL,
+	updated_at timestamptz NOT NULL,
+	CONSTRAINT products_pkey PRIMARY KEY (id)
+);
+
+
+-- public.users definition
+
+-- Drop table
+
+-- DROP TABLE public.users;
+
+CREATE TABLE public.users (
+	id serial4 NOT NULL,
+	"name" varchar(255) NOT NULL,
+	email varchar(255) NOT NULL,
+	created_at timestamptz NOT NULL,
+	updated_at timestamptz NOT NULL,
+	CONSTRAINT users_pkey PRIMARY KEY (id)
+);
+
