@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 
 class Product extends Model {
   static init(connection) {
-    // Não precisamos informar id nem timestamps pois por padrão o methodo herdado já sabe. 
+    // Chamamos o método construtor do Sequelize, passamos name, price, description para criar um novo produto.
     super.init({
       name: DataTypes.STRING,
       price: DataTypes.FLOAT,
