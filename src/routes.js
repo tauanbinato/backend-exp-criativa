@@ -16,8 +16,10 @@ routes.get('/', (req,res) => {
 
 // Post
 routes.post('/products', ProductController.store);
-// Get
+// Get All
 routes.get('/products', ProductController.index);
+// Get Index
+routes.get('/products/:product_id/', ProductController.getProduct);
 // Delete
 routes.delete('/products/:product_id/', ProductController.delete);
 // Update
@@ -35,4 +37,4 @@ routes.delete('/users/:user_id/techs', TechController.delete);
 
 routes.get('/report', ReportController.show);
 
-module.exports = routes;
+module.exports = routes; 

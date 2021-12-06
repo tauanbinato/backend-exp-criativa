@@ -13,6 +13,22 @@ module.exports = {
     // Retornamos esse objeto via JSON.
     return res.json(products);
   },
+
+  async getProduct(req, res) {
+    // Pegamos o id do produto que será deletado pela rota.
+    const { product_id } = req.params;
+ 
+    // Buscamos no banco de dados esse produto atravez do método findByPk do sequelize (findByPrimaryKey)
+    const product = await Product.findByPk(product_id);
+ 
+    // Se o produto não existe retornamos um erro
+    if (!product) {
+      return res.status(400).json({ error: 'Product not found' });
+    }
+    
+    // Retornamos o produto via JSON.
+    return res.json(product);
+  },
  
   // Metodo para adicionar um novo produto no DB
   async store (req, res) {
