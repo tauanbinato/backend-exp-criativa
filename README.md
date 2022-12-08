@@ -11,7 +11,7 @@
  
  🔹 [Henry Ullrich](https://github.com/Hinkien)
  
- 🔹 [Armstrong Henrique](https://github.com/zArmsSlayer)
+ 🔹 [Armstrong Henrique](https://github.com/armsshenrique)
 
 
 ## 🚀 Tecnologias 
